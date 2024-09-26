@@ -1,6 +1,9 @@
 :root {
     --primary: #dd6f88;
-    --secondary: #4c66e7;
+    --secondary: #001F3F;
+    --terciary: #3A6D8C;
+    --cuarto: #6A9AB0;
+    --quinto: #EAD8B1;
 
 }
 
@@ -12,7 +15,7 @@
 }
 
 body {
-    background-color: var(--secondary);
+    background-color: var(--terciary);
 }
 
 .background {
