@@ -1,34 +1,34 @@
-:root {
+:root { 
     --primary: #dd6f88;
     --secondary: #001F3F;
     --terciary: #3A6D8C;
     --cuarto: #6A9AB0;
     --quinto: #EAD8B1;
 
-}
+}/*Define varianles de colores que pueden ser usadas en todo el doc*/
 
 /* astericos para que se aplique en todo el documento */
 * { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: auto;  /*Elimina los margenes predeterminados*/
+    padding: 0; /*Elimina los rellenos predeterminados*/
+    box-sizing: border-box; 
 }
 
 body {
-    background-color: var(--terciary);
+    background-color: var(--terciary); /*Establece el color del fondo del doc*/
 }
 
 .background {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    padding: 80px 32px;
+    width: 100%;  /*Establece el ancho al 100% de la pagina*/
+    display: flex; /*Utiliza el modelo flexible para organizar los elementos dentro de la pagina donde sea*/
+    justify-content: center; /*Centra los elementos de la pagina horizontalmente*/
+    align-items: start; /*Alinea los elementos hijos al inicio de manera vertical*/
+    padding: 80px 32px; 
 }
 
 .articles {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /*Utiliza el modelo flexible para organizar los elementos dentro de la pagina donde sea*/
+    flex-wrap: wrap; 
     margin: 0 auto;
     justify-content: center;
     max-width: 1200px;
@@ -48,7 +48,7 @@ body {
     display: inline-flex;
     color: var(--primary);
     text-decoration: none;
-}
+} /*Link*/
 
 .articles article h2 {
     margin: 0 0 18px 0;
@@ -65,8 +65,9 @@ body {
 
 .articles-preview {
     padding: 24px;
-    background: white;
-}
+    background: #ffffff;
+    min-height: 350px;
+} /*Campo de las cartas*/
 
 .articles figure {
     width: 100%;
