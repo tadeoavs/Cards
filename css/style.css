@@ -16,17 +16,20 @@
 
 
 body {
-    background-color: var(--terciary); /*Establece el color del fondo del doc*/
+    background-color: #3c4a4a; /*Establece el color del fondo del doc*/
+    background-image: url('https://www.solofondos.com/wp-content/uploads/2015/11/21omxpw.jpg');
+    
 }
 
 .title {
     text-align: center; /*Alinea el titulo al centro de la pagina*/
-    color: #bec1c3; /* Establece el color del texto a un tono claro de azul */
+    color: #898484; /* Establece el color del texto a un tono claro de azul */
     font-size: 3rem;
     margin:  0 0 40px 0; /* Aplica un margen (espacio entre los elementos) de 40px alrededor del título */
 }
 
 .background {
+
     width: 100%;  /*Establece el ancho al 100% de la pagina*/
     display: flex; /*Utiliza el modelo flexible para organizar los elementos dentro de la pagina donde sea*/
     justify-content: center; /*Centra los elementos de la pagina horizontalmente*/
@@ -73,7 +76,7 @@ body {
 
 .articles-preview {
     padding: 24px; /* Aplica un espacio interno de 24px */
-    background: #ffffff; /* Establece un fondo blanco para la vista previa */
+    background: #dad8d8; /* Establece un fondo blanco para la vista previa */
     min-height: 350px; /*Establece un minimo del espacio para que todos sean "parejos" */
 } /*Campo del texto de las cartas*/
 
