@@ -11,11 +11,19 @@
 * { 
     margin: auto;  /*Elimina los margenes predeterminados*/
     padding: 0; /*Elimina los rellenos predeterminados*/
-    box-sizing: border-box; 
+    box-sizing: border-box; /* Incluye el borde y el relleno en el tamaño total del elemento */
 }
+
 
 body {
     background-color: var(--terciary); /*Establece el color del fondo del doc*/
+}
+
+.title {
+    text-align: center; /*Alinea el titulo al centro de la pagina*/
+    color: #bec1c3; /* Establece el color del texto a un tono claro de azul */
+    font-size: 3rem;
+    margin:  0 0 40px 0; /* Aplica un margen (espacio entre los elementos) de 40px alrededor del título */
 }
 
 .background {
@@ -24,64 +32,64 @@ body {
     justify-content: center; /*Centra los elementos de la pagina horizontalmente*/
     align-items: start; /*Alinea los elementos hijos al inicio de manera vertical*/
     padding: 80px 32px; 
-}
+}/*Campo del fondo de la pagina*/
 
 .articles {
     display: flex; /*Utiliza el modelo flexible para organizar los elementos dentro de la pagina donde sea*/
-    flex-wrap: wrap; 
-    margin: 0 auto;
-    justify-content: center;
-    max-width: 1200px;
-    gap: 24px;
+    flex-wrap: wrap; /* Permite que los artículos se envuelvan a la siguiente línea si no caben en la fila */
+    margin: 0 auto; /* Centra el contenedor de artículos horizontalmente */
+    justify-content: center; /* Centra los artículos en el contenedor */
+    max-width: 1200px; /* Establece un ancho máximo para el contenedor de artículos */
+    gap: 24px; /* Espacio entre cada artículo */
 }
 
 .articles article {
-    max-width: 320px;
-    cursor: pointer;
-    display: block;
-    transition: all 0.4s ease-in-out;
-    overflow: hidden;
-    border-radius: 16px;
-}
+    max-width: 320px; /* Establece un ancho máximo para cada artículo */
+    cursor: pointer; /* Cambia el cursor a una mano cuando pasa sobre el artículo */
+    display: block; /* Muestra cada artículo como un bloque separado */
+    transition: all 0.4s ease-in-out; /* Hace que los cambios en el artículo se animen suavemente */
+    overflow: hidden; /* Oculta cualquier contenido que sobrepase el área del artículo */
+    border-radius: 16px; /* Redondea las esquinas del artículo para que se vean más suaves */ 
+}/*Estilo para cada Carta/Articulo de manera individual*/
 
 .articles article a {
-    display: inline-flex;
-    color: var(--primary);
-    text-decoration: none;
-} /*Link*/
+    display: inline-flex; /* Usa flexbox para alinear el contenido dentro del enlace */
+    color: var(--primary); /* Establece el color del texto usando el color primario */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+} /*Estilo para el link*/
 
 .articles article h2 {
-    margin: 0 0 18px 0;
-    font-size: 1.6rem;
-    color:var(--secondary);
-    transition: color 0.3s ease-out;
-}
+    margin: 0 0 18px 0; /* Aplica un margen de 0 arriba, 0 a los lados y 18px abajo */
+    font-size: 1.6rem; /* Establece un tamaño de fuente grande para el título */
+    color:var(--secondary); /* Establece el color del texto usando el color secundario */
+    transition: color 0.3s ease-out; /* Hace que el cambio de color se anime suavemente */
+}/*Titulos de las cartas*/
 
 .articles article img {
-    max-width: 100%;
-    transform-origin: center;
-    transition: transform 0.4s ease-in-out;
-}
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    transform-origin: center; /* Hace que las transformaciones de la imagen se realicen desde el centro */
+    transition: transform 0.4s ease-in-out; /* Hace que el cambio en el tamaño de la imagen se anime suavemente */
+} /* Estilo para las imágenes dentro de los artículos/cartas */
 
 .articles-preview {
-    padding: 24px;
-    background: #ffffff;
-    min-height: 350px;
-} /*Campo de las cartas*/
+    padding: 24px; /* Aplica un espacio interno de 24px */
+    background: #ffffff; /* Establece un fondo blanco para la vista previa */
+    min-height: 350px; /*Establece un minimo del espacio para que todos sean "parejos" */
+} /*Campo del texto de las cartas*/
 
 .articles figure {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-}
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    height: 200px; /* Establece una altura fija de 200px para la figura */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+}/* Estilo para el contenedor de la imagen del artículo */
 
 .articles figure img {
-    height: 100%;
-    aspect-ratio: 16/9;
-    overflow: hidden;
-    object-fit: cover;
-}
+    height: 100%; height: 100%; /* Hace que la imagen ocupe toda la altura del contenedor */
+    aspect-ratio: 16/9; aspect-ratio: 16/9; /* Mantiene una relación de aspecto de 16:9 para la imagen */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga */
+    object-fit: cover; /* Hace que la imagen cubra todo el contenedor manteniendo su relación de aspecto */
+}/*Ajuste de las imagenes*/
 
 .articles article:hover img {
-    transform: scale(1.5);
-}
+    transform: scale(1.5); /* Aumenta el tamaño de la imagen al 150% */
+} /* Efectos visuales cuando el cursor pasa sobre el artículo */
